@@ -29,7 +29,7 @@ public class Arquivo5 {
 		
 		/**LISTAR O CONTEUDO DE UM DIRETORIO*/
 		
-		Path dir = Paths.get("C:/Users/Markinho/Java/XTI");//caminho que sera listado
+		Path dir = Paths.get(".");//caminho que sera listado
 		try(DirectoryStream<Path> stream = Files.newDirectoryStream(dir)) {//utilizando metodos da classe file para criar um objeto que armazena os nomes dos diretorios e arquivos contidos no path declarado
 			for (Path path : stream) {//for each para percorrer e imprimir o conteudo do objeto stream
 				System.out.println(path.getFileName());

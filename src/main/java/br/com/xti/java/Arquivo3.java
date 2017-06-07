@@ -22,7 +22,7 @@ import br.com.xti.poo.Conta;
 
 public class Arquivo3 {
 	
-	private Path path = Paths.get("C:/Users/Markinho/Java/XTI/files/contas.txt");//caminho do arquivo
+	private Path path = Paths.get("files/contas.txt");//caminho do arquivo
 	private Charset utf8 = StandardCharsets.UTF_8;//tipo de formatacao
 
 	//Metodo que grava as contas em um txt

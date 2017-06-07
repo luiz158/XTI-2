@@ -16,8 +16,8 @@ public class Arquivo4 {
 
 	public static void main(String[] args) throws IOException {
 		
-		Path path = Paths.get("C:/Users/Markinho/Java/XTI/files/texto.txt");
-		Path path2 = Paths.get("C:/Users/Markinho/Java/XTI/files/fonte.txt");
+		Path path = Paths.get("files/texto.txt");
+		Path path2 = Paths.get("files/fonte.txt");
 		
 		/**VERIFICANDO INFORMACOES DE ARQUIVOS E DIRETORIOS*/
 		
@@ -46,12 +46,12 @@ public class Arquivo4 {
 		
 		/**COPIANDO ARQUIVOS*/
 		
-		Path copia = Paths.get("C:/Users/Markinho/Java/XTI/files/copia.txt");//criando um caminho para a copia do arquivo
+		Path copia = Paths.get("files/copia.txt");//criando um caminho para a copia do arquivo
 		Files.copy(path2, copia, StandardCopyOption.REPLACE_EXISTING);//metodo que copia um arquivo, passo a origem, destino e o terceiro parametro sao opcoes disponiveis para copias de arquivo
 		
 		/**MOVENDO ARQUIVOS*/
 		
-		Path mover = Paths.get("C:/Users/Markinho/Java/XTI/files/move/fonte.txt");//criando o caminho do novo diretorio onde irei mover o arquivo
+		Path mover = Paths.get("files/move/fonte.txt");//criando o caminho do novo diretorio onde irei mover o arquivo
 		Files.createDirectories(mover.getParent());//criando o novo diretorio usando getParent para extrair o caminho do path mover
 		Files.move(path2, mover, StandardCopyOption.REPLACE_EXISTING);//movendo o arquivo eu informo onde o mesmo esta, para onde vai e acrescentei uma opcao para no momento da copia substituir caso o arquivo ja exista
 		

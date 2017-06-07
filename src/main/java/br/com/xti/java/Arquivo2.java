@@ -28,7 +28,7 @@ public class Arquivo2 {
 		//A classe Path juntamente com o metodo get da classe Paths sao responsaveis por definir o caminho de um arquivo
 		//O metodo gets recebe uma string contendo o caminho completo ate um arquivo desejado
 		
-		Path path = Paths.get("C:/Users/Markinho/Java/XTI/files/texto.txt");
+		Path path = Paths.get("files/texto.txt");
 		
 		/**ESCREVER NO ARQUIVO*/
 		
